@@ -7,9 +7,11 @@
     <p>{{ block.settings.description }}</p>
   {%- endif -%}
 
+  {%- if block.settings.googleform -%}
   <div class="gallery">
-<h1>Bloco que vou exibir minhas estatísticas. HELLO WORLD!</h1>
+    <iframe width="600" height="450" src={{ block.settings.googleform }} frameborder="0" style="border:0" allowfullscreen></iframe>
   </div>
+  {%- endif -%}
 
   <image-popup init>
     <template image-popup>
@@ -23,17 +25,21 @@
 
 {% schema %}
   {
-    "name": "Adicionar estatística",
+    "name": "Adicionar formulário",
     "target": "section",
     "stylesheet": "image-gallery.css",
     "javascript": "image-gallery.js",
-    "templates": ["product", "index"],
     "settings": [
       {
         "type": "text",
         "id": "heading",
-        "label": "Chamada - Teste",
-        "default": "Cute Puppy Gallery"
+        "label": "Título",
+        "default": "Titulo default"
+      },
+      {
+        "type": "text",
+        "id": "googleform",
+        "label": "Google form URL"
       }
     ]
   }

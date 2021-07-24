@@ -1,0 +1,74 @@
+
+<style>
+  .responsive-inline-frame {
+  max-width: 800px; /* 800x450 (16x9 aspect ratio) */
+  margin: auto;
+}
+
+.responsive-inline-frame-inner {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+  height: 0;
+}
+
+.responsive-inline-frame-inner iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+</style>
+<image-gallery data-id="{{ block.id }}">
+  {%- if block.settings.heading -%}
+    <h2>{{ block.settings.heading }}</h2>
+  {%- endif -%}
+
+  {%- if block.settings.description -%}
+    <p>{{ block.settings.description }}</p>
+  {%- endif -%}
+
+  {%- if block.settings.googleurl -%}
+
+    <div class="responsive-inline-frame">
+      <div class="responsive-inline-frame-inner">
+        <!--iframe here-->
+        <iframe src={{ block.settings.googleurl }} frameborder="0" style="border:0"></iframe>
+
+      </div>
+
+  </div>
+  {%- endif -%}
+  <image-popup init>
+    <template image-popup>
+      <button close-button class="close-button">
+        {%- render 'icon-close' -%}
+      </button>
+    </template>
+  </image-popup>
+
+</image-gallery>
+
+{% schema %}
+  {
+    "name": "Exibir estatística",
+    "target": "section",
+    "stylesheet": "image-gallery.css",
+    "javascript": "image-gallery.js",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Título",
+        "default": "titulo teste"
+      },
+      {
+        "type": "text",
+        "id": "googleurl",
+        "label": "Google data URL"
+      }
+    ]
+  }
+{% endschema %}
