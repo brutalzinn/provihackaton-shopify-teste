@@ -1,6 +1,6 @@
 # “Estatística verde” – Solução Extra
 
-A extensão para Shopify tem como objetivo permitir a visualização de dados da ferramenta Google Data Studio e inserir formulários do Google Forms. Dessa maneira, permitindo que o usuário da Shopify possa exibir dados independente do tema utilizado em sua loja. Permitindo também maior controle sobre como essa extensão será exibida na loja. Para desenvolver essa solução bônus, precisamos lidar com a extensa documentação da Shopify, entender conceitos abstratos da plataforma e compreender a complexidade da mesma.
+É uma extensão para Shopify que tem como objetivo permitir a visualização de dados da ferramenta Google Data Studio e inserir formulários do Google Forms. Dessa maneira, permitindo que o usuário da Shopify possa exibir dados independente do tema utilizado em sua loja. Permitindo também maior controle sobre como essa extensão será exibida na loja. Para desenvolver essa solução bônus, precisamos lidar com a extensa documentação da Shopify, entender conceitos abstratos da plataforma e compreender a complexidade da mesma.
 
 Lista de tecnologias utilizadas:
 
