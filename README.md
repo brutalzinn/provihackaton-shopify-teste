@@ -33,3 +33,14 @@ Lista de tecnologias utilizadas:
 2. shopify-cli
 3. NodeJs
 
+# Imagens
+
+### Ambiente Shopify em modo desenvolvimento no menu de customização de tema.
+
+![Print 1](imagens/print_1.png)
+
+### Extensão em funcionamento. Nesse caso, mostrando um formulário do Google Forms que pode ser inserido na URL.
+![Print 2](imagens/print_2.png)
+
+### Extensão em funcionamento. Nesse caso, exibindo dados coletados pelo Google Data que pode ser inserido na URL.
+![Print 3](imagens/print_3.png)
